@@ -16,6 +16,8 @@ BspZipGui::BspZipGui(QWidget *parent, Qt::WindowFlags flags)
 {
     ui.setupUi(this);
 
+    this->setWindowFlags(Qt::Window);
+
     bspzip_process_ = new QProcess(this);
     bool b = connect(bspzip_process_, SIGNAL(finished(int, QProcess::ExitStatus)), this, SLOT(onBspZipProcessFinished(int, QProcess::ExitStatus)));
     Q_ASSERT(b);
