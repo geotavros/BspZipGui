@@ -27,9 +27,9 @@ BspZipGui::BspZipGui(QWidget *parent, Qt::WindowFlags flags)
     //progress_dialog_->setMinimumDuration(0);
 
     QSettings settings("settings.ini", QSettings::IniFormat, this);
-    QString bzip = tr("E:\\Games\\Steam\\SteamApps\\common\\nuclear dawn\\bin\\bspzip.exe");
-    QString bsp = tr("E:\\Games\\Steam\\SteamApps\\common\\nuclear dawn\\nucleardawn\\maps\\sk_sandbrick.bsp");
-    QString data_folder = tr("D:\\Programming\\AlienSwarmMaps\\nucleardawn\\sk_sandbrick");
+    QString bzip = tr("C:\\Program Files (x86)\\Steam\\steamapps\\common\\Nuclear Dawn\\bin\\bspzip.exe");
+    QString bsp =  tr("C:\\Program Files (x86)\\Steam\\steamapps\\common\\Nuclear Dawn\\nucleardawn\\maps\\MyMap.bsp");
+    QString data_folder = tr("C:\\work\\MyMapProject");
     ui.bspzip_path->setText(settings.value("BSPZIP_PATH", bzip).toString());
     ui.bspfile_path->setText(settings.value("BSP_FILE_PATH", bsp).toString());
     ui.data_folder_path->setText(settings.value("DATA_FOLDER_PATH", data_folder).toString());
