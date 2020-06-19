@@ -17,4 +17,4 @@ To embed your files into BSP file you need to:
 Building
 --------
 
-Get Qt5 SDK. Run Qt Creator. Open VpkCompare.pro and build.
+Get Qt5 SDK. Run Qt Creator. Open BspZipGui.pro and build.
